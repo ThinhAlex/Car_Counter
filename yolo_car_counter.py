@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 from sort import *
 
-cap = cv2.VideoCapture("images/car_fast.mp4")
+cap = cv2.VideoCapture("video/car_fast.mp4")
 cap.set(3, 1280)
 cap.set(4, 720)
 
@@ -24,7 +24,7 @@ listID = []
 
 while True:
     success, img = cap.read()
-    mask = cv2.imread("images/mask.png")
+    mask = cv2.imread("video/mask.png")
     masked_img = cv2.bitwise_and(img, mask)
     results = model(masked_img, stream = True)
     
