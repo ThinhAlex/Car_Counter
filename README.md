@@ -1,6 +1,6 @@
 # Car Counter
 
-Professionalized vehicle counting project using YOLOv8 + SORT.
+Vehicle counter using YOLOv8 + SORT.
 
 ## Features
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. Setup Video
-Since automated downloading is often blocked, you must download the video manually:
+You follow the steps below to setup testing video:
 
 1. Create a folder named `video` in the project root.
 
