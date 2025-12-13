@@ -1,0 +1,15 @@
+video_path: video/sample_video.mp4
+model: yolov8n.pt
+device: cpu
+conf_thresh: 0.3 # how confident the model has to be to consider a detection
+classes:
+  - car
+  - truck
+  - bus
+  - motorbike
+tracker:
+  max_age: 15 # how long(in frame) the model remembers a vehicle
+  min_hits: 2 # how many times the model needs to confirm a vehicle before counting it
+  iou_threshold: 0.01 # minimum overlap between boxes to consider it the same vehicle
+display: true
+output_video: null
